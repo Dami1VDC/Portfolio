@@ -1,0 +1,298 @@
+/**************************************Principal**************************************/
+
+*{margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Hammersmith One', sans-serif;
+    color: #D9BBA3;
+    scroll-behavior: smooth;
+}
+
+/**************************************IMPORT**************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Yaldevi:wght@600&display=swap');
+
+/**************************************HEADER**************************************/
+
+header{    
+    background: url(/img/spectrex360_13_tcm133_2717363_tcm133_2717053_tcm133-2717363.webp) center/100%;
+    background-image: radial-gradient();
+    height: 50vw;
+    width: 100vw;
+    padding: 1rem 0rem;
+    margin: 0;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/**************** Logo **********************/
+
+.logo a{
+    font-size: 3rem;
+    color: #D9BBA3;
+    text-shadow: .1vw .1vw .1vw #695A4E;
+}
+
+.logo_et_nav{    
+    display: flex;
+    justify-content: space-between;
+}
+
+/**************** NAV **********************/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    color :#D9BBA3;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+/**************** CITATION **********************/
+
+#citation{
+    font-family: 'Bonheur Royale', cursive, 'Yaldevi', sans-serif;
+    box-shadow: 0 0 10vw 0vw;
+    padding: 0;
+    border-radius: 5rem;
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+figure{
+    padding: 1rem;
+    color: #D9BBA3;
+    font-size: 5rem;
+    letter-spacing: 3px;
+}
+/* 
+Pour mettre une image dans le texte de la citation
+figure p {
+    background: #D9BBA3 url(https://t4.ftcdn.net/jpg/00/76/96/75/360_F_76967569_oakT0tn1Qa8HXnENohBCUEq3maPmAEEo.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+} */
+
+
+/**************************************MAIN**************************************/
+
+main{
+    margin: 0;
+    background-color: black;
+    width: 100vw;
+}
+
+/**************** animation flèche bas**********************/
+  
+#i{
+    position:absolute;
+    animation: bounce 0.75s ease infinite alternate;
+}
+
+#i2{
+    display: flex;
+    text-align: center;
+    color: #D9BBA3;
+    margin: 35vw 45vw 0;
+}
+
+@keyframes bounce{
+    from {top: 106px;}
+    80%  {top: 90px;}
+    to   {top: 106px;}
+}
+
+/**************** LIENS **********************/
+a{
+    text-decoration: none;
+    color: #D9BBA3;
+/* 
+    cursor: none; */
+}
+
+a:hover{
+    color: #695A4E;
+}
+
+a:visited{
+    text-decoration: blanchedalmond;
+}
+
+/************************************** LISTES **************************************/
+
+/* @counter-style listes{
+    system: cyclic;
+    symbols: "\1F449";
+    suffix: "";
+} */
+
+#competences li{
+    list-style: none ;
+}
+
+#competences>ul>li{
+    list-style-type: "\1F4A1";
+    margin: 2rem;
+}
+
+/************************************** TITRES **************************************/
+h2{    
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+/************************************** PARTIE 2 **************************************/
+.partie_2{
+    width: 90%;
+    text-align: center;
+    color: #D9BBA3;
+    font-size: 2rem;
+}
+
+#partie_2{
+    padding: 10rem 0;
+}
+
+.i{
+    animation: bounce 0.7s ease infinite;
+}
+  
+@keyframes bounce {
+    from {top: 106px;}
+    50%  {top: 86px;}
+    to   {top: 106px;}
+  }
+
+/************************************** SECTIONS **************************************/
+section{
+    padding: 2rem 0rem;
+    margin: 5rem 10rem 0rem;
+    text-align: left;
+    text-align: justify;
+}
+
+/************************************** ARTICLES **************************************/
+#articles{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.article{
+    font-size: 3rem;
+    padding: 1rem;
+    width: 20%;
+    color: #D9BBA3;
+    text-shadow: .1vw .1vw .1vw #695A4E;
+}
+
+/************************************** FOOTER **************************************/
+footer{
+    min-height: 20%;
+    width: 100vw;
+    background: no-repeat center/cover url("../img/pexels-markus-spiske-1679719.jpg");
+    text-align: center;
+}
+
+#follow{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 3%;
+    font-size: 3rem;
+}
+
+#bottom{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1rem 0;
+}
+
+#rights{
+    align-self: top;
+    padding-left: 1rem;
+}
+
+#credits{
+    align-content: bottom;
+    padding-right: 2rem;
+    color: #695A4E;
+}
+
+/************************************** ICONES **************************************/
+i{
+    text-shadow: .1vw .1vw .1vw #D9BBA3;
+}
+
+/************************************** SCROLLBAR CUSTOMISEE **************************************/
+.pave{
+    overflow: auto;
+}
+
+.pave--custom-scrollbar::-webkit-scrollbar {
+    width: 1vw;
+    background-color: #695A4E;
+}
+
+.pave--custom-scrollbar::-webkit-scrollbar-track{
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.pave--custom-scrollbar::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #695A4E;
+    border: 1.5px ridge #D9BBA3;
+}
+
+/************************************** RESPONSIVE **************************************/
+@media screen and (max-width: 1440px) {
+    figure{
+      max-height: 10vw;
+      font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .partie_2{
+        font-size: 1rem;
+    }
+    .article{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #citation{
+        display: none;
+    }
+
+    #i2{
+        display: flex;
+        text-align: center;
+        color: #D9BBA3;
+        margin: 40vw 30vw 0;
+        }
+}
+
+@media screen and (max-width: 425px) {
+    .pave{
+       overflow: auto ;
+    }
+}
